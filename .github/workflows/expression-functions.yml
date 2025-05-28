@@ -28,7 +28,7 @@ jobs:
 
       - name: Join issue labels
         if: github.event_name == 'issues'
-        run: echo 'Parsed JSON:${{ fromJSON("{"hello":"world"}").hello }}'
+        run: echo 'Parsed JSON:${{ fromJSON("{"hello":"world"}") }}'
 
       - name: Convert job context to JSON
         run: echo "Job context in JSON:${{ toJSON(github.job) }}"
