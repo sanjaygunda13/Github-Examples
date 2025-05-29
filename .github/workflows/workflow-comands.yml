@@ -6,17 +6,17 @@ jobs:
     steps:
       - name: "group logging"
         run: |
-          echo ":: group::my mesasge"
+          echo "::group::my mesasge"
           echo "msg1"
           echo "msg2"
           echo "::endgroup::"
           
       - name: "step2"
         run: |
-          echo "MY_VAL =hello" >> $GITHUB_ENV
+          run: echo "MY_VAL =hello" >> $GITHUB_ENV
       - name: "step3"
         run: |
-          echo $MY_VAL
+          run: echo $MY_VAL
           
 
 
