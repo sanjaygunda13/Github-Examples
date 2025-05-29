@@ -8,6 +8,10 @@ jobs:
     steps:
        
       - name: "My step"
-        run: echo "hello $MY_ACTION"
+        run: |
+         echo "hello $MY_ACTION"
+         echo "hello $MY_ACTION_REF"
+     
         env:
            MY_ACTION: ${{github.action_path}}
+           MY_ACTION_REF: ${{github.action_ref}}
