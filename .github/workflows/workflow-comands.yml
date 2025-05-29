@@ -10,7 +10,7 @@ jobs:
           echo "msg1"
           echo "msg2"
           echo "::enf=dgroup::"
-          - name: "group logging"
+          
       - name: "step2"
         run: |
           echo "MY_VAL =hello" >>$GITHUB_ENV
