@@ -10,5 +10,12 @@ jobs:
           echo "msg1"
           echo "msg2"
           echo "::enf=dgroup::"
+          - name: "group logging"
+      - name: "step2"
+        run: |
+          echo ":: group::my mesasge "
+          echo "msg1"
+          echo "msg2"
+          echo "::enf=dgroup::"
 
 
